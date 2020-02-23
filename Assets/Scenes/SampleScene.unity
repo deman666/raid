@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 793789040}
   - component: {fileID: 793789039}
   - component: {fileID: 793789045}
+  - component: {fileID: 793789041}
   m_Layer: 0
   m_Name: PlayerEngineer
   m_TagString: Player
@@ -324,6 +325,43 @@ MonoBehaviour:
   debugAim: 0
   spine: {fileID: 544927252}
   TPSCamera: {fileID: 963194227}
+--- !u!114 &793789041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793789038}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856f6b538d853774c968684a55f7bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponType: 0
+  userSettings:
+    LeftHandIKTarget: {fileID: 0}
+    spineRotation: {x: 0, y: 0, z: 0}
+  weaponSettings:
+    bulletSpawn: {fileID: 0}
+    damage: 5
+    bulletSpread: 5
+    fireRate: 0.2
+    range: 200
+    bullet: {fileID: 0}
+    clip: {fileID: 0}
+    reloadDuration: 2
+    clipGO: {fileID: 0}
+    equipPosition: {x: 0, y: 0, z: 0}
+    equipRotation: {x: 0, y: 0, z: 0}
+    unEquipPosition: {x: 0, y: 0, z: 0}
+    unEquipRotation: {x: 0, y: 0, z: 0}
+    useAnimation: 0
+    fireAnimationLayer: 0
+    fireAnimationName: Fire
+  ammo:
+    carryingAmmo: 0
+    clipAmmo: 0
+    maxClipAmmo: 0
 --- !u!143 &793789042
 CharacterController:
   m_ObjectHideFlags: 0
@@ -908,5 +946,20 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2354978587841486314, guid: 1cf40ea8f73cdb244a11f767626a8d81,
+        type: 3}
+      propertyPath: spawnPointList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2354978587841486314, guid: 1cf40ea8f73cdb244a11f767626a8d81,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3419844682089991596, guid: 1cf40ea8f73cdb244a11f767626a8d81,
+        type: 3}
+      propertyPath: myCamera
+      value: 
+      objectReference: {fileID: 963194227}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf40ea8f73cdb244a11f767626a8d81, type: 3}

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8892034869261937556}
   - component: {fileID: 1187790869323602594}
   - component: {fileID: 1187790869323602596}
+  - component: {fileID: 3419844682089991596}
   m_Layer: 0
   m_Name: Gun_Blaster
   m_TagString: Untagged
@@ -131,7 +132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7159048399083052872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 856f6b538d853774c968684a55f7bf0f, type: 3}
   m_Name: 
@@ -145,15 +146,10 @@ MonoBehaviour:
     damage: 5
     bulletSpread: 5
     fireRate: 0.2
-    bulletLayers:
-      serializedVersion: 2
-      m_Bits: 0
     range: 200
-    muzzleFlash: {fileID: 0}
-    decal: {fileID: 0}
+    bullet: {fileID: 0}
     clip: {fileID: 0}
     reloadDuration: 2
-    clipEjectPos: {fileID: 0}
     clipGO: {fileID: 0}
     equipPosition: {x: 0.022, y: 0.04, z: -0.192}
     equipRotation: {x: -0, y: 90, z: 90}
@@ -166,3 +162,19 @@ MonoBehaviour:
     carryingAmmo: 120
     clipAmmo: 12
     maxClipAmmo: 12
+--- !u!114 &3419844682089991596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7159048399083052872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985485aaaf06ad943993b1b8646f7c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointList:
+  - {fileID: 1187790869764296347}
+  bullet: {fileID: 4372119645152072250, guid: 0956b2eb06545db42adb0298668ec77a, type: 3}
+  myCamera: {fileID: 0}
